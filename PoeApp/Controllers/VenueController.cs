@@ -141,7 +141,7 @@ namespace PoeApp.Controllers
 
         private async Task<string> UploadImageToBlobAsync(IFormFile imageFile)
         {
-            var connectionString = "AZURE_STORAGE_CONNECTION_STRING_REMOVED";
+            var connectionString = "";
             var containerName = "cldv6211project";
 
             var blobServiceClient = new BlobServiceClient(connectionString);
